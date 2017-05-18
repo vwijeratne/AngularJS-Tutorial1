@@ -1,0 +1,21 @@
+﻿<div>
+    <h2>{{reponame}}</h2>
+    {{error}}    
+    <br />
+    <br />
+    <p>Issue Count: {{issuecount}}</p>
+    <br />
+    <br />
+    <table class="table table-striped table-bordered" ng-repeat="cnt in contributors">
+        <thead>
+            <tr>
+                <td>Name</td>                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{cnt.login}}</td>                
+            </tr>
+        </tbody>
+    </table>
+</div>
